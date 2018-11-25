@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.sass"],"names":[],"mappings":"AAEA;EACI,YAHe;EAIf,yBAAgB;UAAhB,iBAAgB,EAAG","file":"all.css","sourcesContent":["$colorPrimary: blue;\n\nbody {\n    color: $colorPrimary;\n    transform: 60deg; }\n"]}
