@@ -143,6 +143,11 @@ $.watch(['./source/js/**/*.js'], function() {
   gulp.start('babel'); // 如果有便呼叫 babel 這個 Task
 });
 
+//上傳至 github page
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe($.ghPages());
+});
 
 //同時執行所有任務 
 gulp.task('default', ['pug','sass', 'babel', 'vendorJS', 'imageMin', 'browser-sync', 'watch']); //開發時使用
